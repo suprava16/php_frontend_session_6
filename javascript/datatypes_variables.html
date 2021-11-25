@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .heading{
+      color:blue;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    //Datatypes
+    // string-"suprava"
+    // number-50 45.8
+    // boolean-true false
+    // null
+    // undefined
+
+    //let var const
+    // var keywords are functional scoped and we can reassign the variables by using var keyword
+    var a = 30;
+    var b = 50;
+    // var b=10;
+    if (a < b) {
+      var a = 80;
+      document.write(a +"<br/>")//80
+      document.write(b);//50
+    }
+    document.write(a)//80
+    document.write(b);//50
+
+    //Let keyword
+    //let keywords are blocked scoped. we can access the values of a let variable within a block only.
+    // let a = 30; 
+    // let b = 50;
+    // if (a < b) {
+    //   let a = 80;
+    //   document.write(a)//80
+    //   document.write(b);//50
+    // }
+    // document.write(a)//30
+    // document.write(b);//50
+
+    //const keyword
+    // const and let keywords has no differences.But you can't reassign a variable by using let or const keyword
+    
+    // const a = 30;
+    // const b = 50;
+    // const b=10;//error
+    // if (a < b) {
+    //   const a = 80;
+    //   document.write(a)//80
+    //   document.write(b);//50
+    // }
+    // document.write(a)//30
+    // document.write(b);//50
+
+    //we can add html tags and css code withing document.write() function
+    document.write("<h1 class=heading>'Hello' 'everyone'</h1>")
+  </script>
+</body>
+
+</html>
