@@ -2,10 +2,10 @@
 background-color: burlywood;
 display: flex;
 flex-direction: row;
-/* justify-content: space-evenly; */
+justify-content: space-between;
 /* align-items: center;
 height: 700px; */
-flex-wrap: nowrap;
+flex-wrap: wrap;
 }
 .div1{
   width: 600px;
