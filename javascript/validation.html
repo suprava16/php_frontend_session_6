@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="password" id="input_password">
+  <button onclick="return handleClick()">Register</button>
+  <span id="error" style="color:red;"></span>
+
+  <script>
+   function handleClick(){
+    var password = document.getElementById("input_password").value
+    var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{5,12}$/
+
+    if (password.match(regex)) {
+      alert("password is correct")
+      return true;
+
+    }
+    else {
+      document.getElementById("error").innerHTML = "password must contain an uppercase,lowercase,numeric value and special character";
+       return false;
+    }
+   }
+  </script>
+</body>
+
+</html>
